@@ -97,23 +97,23 @@ public class PrzechowywanieZmiennych {
         //Tworzenie tekstu na środku
         switch (numerTla) {
             case 1 -> {
-                string1 = "głodu";
+                string1 = "hunger";
             }
             case 2 -> {
-                string1 = "zabawy";
+                string1 = "fun";
             }
             case 3 -> {
-                string1 = "zdrowia";
+                string1 = "health";
             }
             case 4 -> {
-                string1 = "wyspania";
+                string1 = "sleepiness";
             }
 
         }
         int int1 = 30;
         int int2 = 3;
-        String string2 = "kredyty";
-        String tekst = "Czy chcesz kupić " + int1 + "%" +" " + string1 + " za " + int2 + " " + string2;
+        String string2 = "credits";
+        String tekst = "Do you want to buy " + int1 + "%" +" of " + string1 + " for " + int2 + " " + string2;
         JLabel label = new JLabel(tekst);
         label.setHorizontalAlignment(JLabel.CENTER);
         label.setVerticalAlignment(JLabel.CENTER);
