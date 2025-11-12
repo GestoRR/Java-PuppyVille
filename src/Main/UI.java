@@ -74,24 +74,24 @@ public class UI {
      */
     public String wpisz_imie() {
         JPanel panel = new JPanel();
-        JLabel komunikat = new JLabel("Wpisz imię dla pupila: ");
+        JLabel komunikat = new JLabel("Enter a name for your pet: ");
         JTextField textField = new JTextField(20);
 
         panel.add(komunikat);
         panel.add(textField);
 
         while (true) {
-            int result = JOptionPane.showConfirmDialog(null, panel, "Wprowadź imię", JOptionPane.OK_CANCEL_OPTION);
+            int result = JOptionPane.showConfirmDialog(null, panel, "Enter a name", JOptionPane.OK_CANCEL_OPTION);
 
             if (result == JOptionPane.OK_OPTION) {
                 przechowywanie.imie = textField.getText();
                 if (!przechowywanie.imie.isEmpty()) {
                     return przechowywanie.imie;
                 } else {
-                    JOptionPane.showMessageDialog(null, "Imię nie może być puste. Wprowadź imię.");
+                    JOptionPane.showMessageDialog(null, "The name field cannot be empty. Enter a name.");
                 }
             } else {
-                JOptionPane.showMessageDialog(null, "Musisz wprowadzić imie!");
+                JOptionPane.showMessageDialog(null, "You must enter a name!");
             }
         }
     }
