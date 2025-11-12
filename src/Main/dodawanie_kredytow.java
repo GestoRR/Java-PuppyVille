@@ -50,9 +50,9 @@ public class dodawanie_kredytow {
     private void wyswietlPopupMenu(int x, int y) {
         JPopupMenu popupMenu = new JPopupMenu();
 
-        JMenu kategorieMenu = new JMenu("Kategorie");
+        JMenu kategorieMenu = new JMenu("Categories");
 
-        JMenuItem matematykaMenuItem = new JMenuItem("Matematyka");
+        JMenuItem matematykaMenuItem = new JMenuItem("Math");
         matematykaMenuItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -60,7 +60,7 @@ public class dodawanie_kredytow {
             }
         });
 
-        JMenuItem tlumaczenieMenuItem = new JMenuItem("Tłumaczenie");
+        JMenuItem tlumaczenieMenuItem = new JMenuItem("Translation");
         tlumaczenieMenuItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -68,7 +68,7 @@ public class dodawanie_kredytow {
             }
         });
 
-        JMenuItem zagadkiMenuItem = new JMenuItem("Zagadki");
+        JMenuItem zagadkiMenuItem = new JMenuItem("Riddles");
         zagadkiMenuItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -91,11 +91,11 @@ public class dodawanie_kredytow {
     private void PoziomTrudnosciMenu(String kategoria) {
         JPopupMenu PoziomTrudnosciMenu = new JPopupMenu();
 
-        JMenuItem latwyMenuItem = new JMenuItem("Łatwy");
+        JMenuItem latwyMenuItem = new JMenuItem("Easy");
         latwyMenuItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame zadanieFrame = new JFrame(kategoria + " - Łatwy");
+                JFrame zadanieFrame = new JFrame(kategoria + " - Easy");
 
                 JPanel panel = new JPanel();
                 panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
@@ -127,7 +127,7 @@ public class dodawanie_kredytow {
                 pole_na_odpowiedz.setHorizontalAlignment(SwingConstants.CENTER);
                 panel.add(pole_na_odpowiedz);
 
-                JButton odpowiedzPrzycisk = new JButton("Ostateczna odpowiedź");
+                JButton odpowiedzPrzycisk = new JButton("Final answer");
                 odpowiedzPrzycisk.setHorizontalAlignment(SwingConstants.CENTER);
                 odpowiedzPrzycisk.setFont(new Font("Arial", Font.PLAIN, 26));
                 JPanel panelPrzycisk = new JPanel();
@@ -141,11 +141,11 @@ public class dodawanie_kredytow {
                         String odpowiedzUzytkownika = pole_na_odpowiedz.getText();
                         if (odpowiedzUzytkownika.equalsIgnoreCase(poprawnaOdpowiedz)) {
                             // Poprawna odpowiedz
-                            JOptionPane.showMessageDialog(null, "Super, poprawna odpowiedz! Dostajesz 1 kredyt :)!");
+                            JOptionPane.showMessageDialog(null, "Super, correct answer! You get 1 credit :)!");
                             UI.przechowywanie.dodajPunkt(1,'+');
                         } else {
                             // Niepoprawna odpowiedz
-                            JOptionPane.showMessageDialog(null, "Odpowiedź niepoprawna. Tracisz 1 kredyt :(");
+                            JOptionPane.showMessageDialog(null, "Incorrect answer. You lose 1 credit :(");
                             UI.przechowywanie.dodajPunkt(1,'-');
                         }
                         zadanieFrame.dispose();
@@ -160,11 +160,11 @@ public class dodawanie_kredytow {
             }
         });
 
-        JMenuItem trudnyMenuItem = new JMenuItem("Trudny");
+        JMenuItem trudnyMenuItem = new JMenuItem("Hard");
         trudnyMenuItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame zadanieFrame = new JFrame(kategoria + " - trudny");
+                JFrame zadanieFrame = new JFrame(kategoria + " - hard");
 
                 JPanel panel = new JPanel();
                 panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
@@ -180,7 +180,7 @@ public class dodawanie_kredytow {
                     poprawnaOdpowiedz = String.valueOf(odpowiedzi[5]);
                 } else if (kategoria.equals("Tłumaczenie")) {
                     String[] odpowiedzi = TlumaczenieTrudne();
-                    zadanieLabel = new JLabel("Przetlumacz '"+odpowiedzi[0]+"' na Angielski:");
+                    zadanieLabel = new JLabel("Translate '"+odpowiedzi[0]+"' into English:");
                     poprawnaOdpowiedz = odpowiedzi[1];
                 } else {
                     String[] odpowiedzi = ZagadkiTrudne();
@@ -197,7 +197,7 @@ public class dodawanie_kredytow {
                 pole_na_odpowiedz.setHorizontalAlignment(SwingConstants.CENTER);
                 panel.add(pole_na_odpowiedz);
 
-                JButton odpowiedzPrzycisk = new JButton("Ostateczna odpowiedź");
+                JButton odpowiedzPrzycisk = new JButton("Final answer");
                 odpowiedzPrzycisk.setHorizontalAlignment(SwingConstants.CENTER);
                 odpowiedzPrzycisk.setFont(new Font("Arial", Font.PLAIN, 26));
                 JPanel panelPrzycisk = new JPanel();
