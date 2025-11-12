@@ -38,7 +38,7 @@ public class Menu {
                 oknoMenu.setAlwaysOnTop(true);
                 oknoMenu.setLayout(null);
 
-                JButton opuscGre = new JButton("OPUŚĆ GRĘ");
+                JButton opuscGre = new JButton("EXIT GAME");
                 opuscGre.setBounds(50,300,453,160);
                 opuscGre.setHorizontalAlignment(SwingConstants.CENTER);
                 opuscGre.setFont(czcionka);
@@ -52,7 +52,7 @@ public class Menu {
 
                 oknoMenu.add(opuscGre);
 
-                JButton zamknijMenu = new JButton("ZAMKNIJ MENU");
+                JButton zamknijMenu = new JButton("CLOSE MENU");
                 zamknijMenu.setBounds(50,100,453,160);
                 zamknijMenu.setHorizontalAlignment(SwingConstants.CENTER);
                 zamknijMenu.setFont(czcionka);
