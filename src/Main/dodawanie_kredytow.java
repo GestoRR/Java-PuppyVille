@@ -211,12 +211,12 @@ public class dodawanie_kredytow {
                         String odpowiedzUzytkownika = pole_na_odpowiedz.getText();
                         if (odpowiedzUzytkownika.equalsIgnoreCase(poprawnaOdpowiedz)) {
                             //Poprawna odpowiedz
-                            JOptionPane.showMessageDialog(null, "Super, poprawna odpowiedz! Dostajesz 3 kredyty :)!");
+                            JOptionPane.showMessageDialog(null, "Super, correct answer! You get 3 credits :)!");
                             UI.przechowywanie.dodajPunkt(3,'+');
 
                         } else {
                             //Niepoprawna odpowiedz
-                            JOptionPane.showMessageDialog(null, "Odpowiedź niepoprawna. Tracisz 3 kredyty :(");
+                            JOptionPane.showMessageDialog(null, "Incorrect answer. You lose 3 credits :(");
                             UI.przechowywanie.dodajPunkt(3,'-');
                         }
                         zadanieFrame.dispose();
