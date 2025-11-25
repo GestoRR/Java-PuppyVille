@@ -131,7 +131,7 @@ public class PrzechowywanieZmiennych {
                 switch (numerTla) {
                     case 1:
                         if (ilosc_kredytow < 3) {
-                            JOptionPane.showMessageDialog(null, "Niewystarczająca ilość kredytów!", "Błąd", JOptionPane.ERROR_MESSAGE);
+                            JOptionPane.showMessageDialog(null, "Not enough credits!", "Error", JOptionPane.ERROR_MESSAGE);
                         } else {
                             if (ilosc_punkty_vitalne[1] < 70) {
                                 ilosc_punkty_vitalne[1] += 30;
@@ -149,7 +149,7 @@ public class PrzechowywanieZmiennych {
 
                     case 2:
                         if (ilosc_kredytow < 3) {
-                            JOptionPane.showMessageDialog(null, "Niewystarczająca ilość kredytów!", "Błąd", JOptionPane.ERROR_MESSAGE);
+                            JOptionPane.showMessageDialog(null, "Not enough credits!", "Error", JOptionPane.ERROR_MESSAGE);
                         } else {
                             if (ilosc_punkty_vitalne[3] < 70) {
                                 ilosc_punkty_vitalne[3] += 30;
@@ -166,7 +166,7 @@ public class PrzechowywanieZmiennych {
                         break;
                     case 3:
                         if (ilosc_kredytow < 3) {
-                            JOptionPane.showMessageDialog(null, "Niewystarczająca ilość kredytów!", "Błąd", JOptionPane.ERROR_MESSAGE);
+                            JOptionPane.showMessageDialog(null, "Not enough credits!", "Error", JOptionPane.ERROR_MESSAGE);
                         } else {
                             if (ilosc_punkty_vitalne[0] < 70) {
                                 ilosc_punkty_vitalne[0] += 30;
@@ -183,7 +183,7 @@ public class PrzechowywanieZmiennych {
                         break;
                     case 4:
                         if (ilosc_kredytow < 3) {
-                            JOptionPane.showMessageDialog(null, "Niewystarczająca ilość kredytów!", "Błąd", JOptionPane.ERROR_MESSAGE);
+                            JOptionPane.showMessageDialog(null, "Not enough credits!", "Error", JOptionPane.ERROR_MESSAGE);
                         } else {
                             if (ilosc_punkty_vitalne[2] < 70) {
                                 ilosc_punkty_vitalne[2] += 30;
