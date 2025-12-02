@@ -75,25 +75,25 @@ public class TimerKlasa {
         String komunikat = "";
         switch (numerPunktu) {
             case 1:
-                komunikat = "Czystość to klucz do zdrowego pieska! Zapewnij mu regularne kąpiele i dbaj o higienę.";
+                komunikat = "Cleanliness is the key to a healthy dog! Give your dog regular baths and take care of its hygiene.";
                 break;
             case 2:
-                komunikat = "Pamietaj o regularnym karmieniu swojego pieska! Zaniedbanie posiłków może prowadzić do utraty punktów. Zadbaj o zdrową dietę, a twój pupilek będzie pełen energii!";
+                komunikat = "Remember to feed your dog regularly! Neglecting meals can lead to a loss of points. Make sure your pet has a healthy diet and it will be full of energy!";
                 break;
             case 3:
-                komunikat = "Zadbaj o zdrowy sen swojego pieska! Brak odpowiedniej ilości snu może wpływać na jego samopoczucie. Upewnij się, że ma wygodne miejsce do spania.";
+                komunikat = "Make sure your dog gets a good night's sleep! Lack of sleep can affect your dog's well-being. Make sure they have a comfortable place to sleep.";
                 break;
             case 4:
-                komunikat = "Pamiętaj, że twój piesek potrzebuje twojej uwagi! Zabawa i pieszczoty są kluczowe dla jego dobrego samopoczucia. Następnym razem poświęć mu trochę czasu i zbuduj silną więź!";
+                komunikat = "Remember that your dog needs your attention! Play and affection are crucial for its well-being. Next time, spend some time with it and build a strong bond!";
                 break;
         }
 
         //Wyświetl okno informacyjne
-        JOptionPane.showMessageDialog(null, komunikat, "Koniec gry", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, komunikat, "End of game", JOptionPane.INFORMATION_MESSAGE);
 
         //Obsługa przycisków "Zagraj ponownie" i "Opuść grę"
-        Object[] options = {"Zagraj ponownie", "Opuść grę"};
-        int choice = JOptionPane.showOptionDialog(null, "Co chcesz zrobić?", "Wybór", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
+        Object[] options = {"Play again", "Exit game"};
+        int choice = JOptionPane.showOptionDialog(null, "What do you wish to do?", "Choice", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
 
         if (choice == JOptionPane.YES_OPTION) {
             for (int i=0;i<4;i++) {
