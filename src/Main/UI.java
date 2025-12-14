@@ -64,7 +64,7 @@ public class UI {
         okno.getContentPane().setBackground(Color.black);
         okno.setLayout(null);
         okno.setResizable(false);
-        okno.setTitle("PuppyVille: Psia Ferajna");
+        okno.setTitle("PuppyVille: Doggy Crew");
         okno.setLocationRelativeTo(null);
     }
 
